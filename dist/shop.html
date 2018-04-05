@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="/shop.js"></script>
+    <style>
+    #products {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+    #cart table td {
+      text-align: center;
+    }
+    #clear-cart {
+      float: right;
+    }
+    #cart-price {
+      float: left;
+    }
+    </style>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Super Shop
+      </h1>
+      <div class="columns">
+        <div class="column is-three-quarters" id="products">
+            <!-- PRODUCT TEMPLATE -->
+
+        </div>
+        <div class="column" id="cart">
+          <article class="notification is-primary">
+            <table class="is-fullwidth">
+              <thead><th>Name</th><th>Items</th><th></th></thead>
+              <tbody id="listShopping"></tbody>
+            </table>
+            <hr/>
+            <p id="cart-price">
+              Cart price: <strong>00.00</strong>
+            </p>
+            <button class="button is-warning" id="clear-cart">Clear cart</button>
+            <div style="clear: both"></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  </body>
+</html>

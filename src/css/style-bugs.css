@@ -1,0 +1,19 @@
+.singleBug {
+
+}
+#high, #middle, #low{
+     display: block;
+}
+#high .arrowLeft{
+     display: none;
+     background: red;
+}
+#low .arrowRight{
+     display: none;
+}
+.arrowLeft{
+     margin-left: 6px;
+}
+.arrowRight{
+     margin-left: 6px;
+}

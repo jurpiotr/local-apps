@@ -5,8 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bugs</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="././src/css/style-bugs.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src='/bugs.js' ></script>
+    <style>
+      #high, #middle, #low{
+          display: block;
+      }
+      #high .arrowLeft{
+          display: none;
+          background: red;
+      }
+      #low .arrowRight{
+          display: none;
+      }
+      .arrowLeft{
+          margin-left: 6px;
+          width: 20px;
+          height: 20px;
+          vertical-align: bottom;
+          transform: rotate(180deg);
+      }
+      .arrowRight{
+          margin-left: 6px;
+          width: 20px;
+          height: 20px;
+          vertical-align: bottom;
+      }
+    </style>
   </head>
   <body>
   <section class="section">
@@ -48,7 +74,7 @@
                 <span class="icon">
                   <i class="fas fa-bug"></i>
                 </span>
-                <span>Middle</span>
+                <span>Low</span>
               </p>
               <div class="panel-block" id="low">
                 <p class="control has-icons-left">
